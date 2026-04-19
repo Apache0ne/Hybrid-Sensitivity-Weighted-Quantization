@@ -1,0 +1,5 @@
+recursive-include ComfyUI-master/comfy *
+recursive-include histogram *.py
+include README.md
+include LICENSE
+include sample/*.txt

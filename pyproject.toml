@@ -1,3 +1,7 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
 [project]
 name = "Hybrid-Sensitivity-Weighted-Quantization"
 version = "2.0.0"
@@ -5,6 +9,32 @@ description = "HSWQ(Hybrid-Sensitivity-Weighted-Quantization) is a groundbreakin
 authors = [{ name = "ussoewwin" }]
 license = { file = "LICENSE" }
 requires-python = ">=3.10, <3.13"
+dependencies = [
+    "torch",
+    "torchsde",
+    "torchvision",
+    "torchaudio",
+    "numpy>=1.25.0",
+    "einops",
+    "transformers>=4.50.3",
+    "tokenizers>=0.13.3",
+    "sentencepiece",
+    "safetensors>=0.4.2",
+    "aiohttp>=3.11.8",
+    "yarl>=1.18.0",
+    "pyyaml",
+    "Pillow",
+    "scipy",
+    "tqdm",
+    "psutil",
+    "alembic",
+    "SQLAlchemy",
+    "av>=14.2.0",
+    "requests",
+]
+
+[project.scripts]
+hswq-quantize-sd15 = "quantize_sd15_hswq_v1:main"
 
 [project.urls]
 Repository = "https://github.com/ussoewwin/Hybrid-Sensitivity-Weighted-Quantization"

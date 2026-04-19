@@ -6,6 +6,8 @@
 
 High-fidelity FP8 quantization for **SDXL**, **Flux1.dev**, and **Z Image Turbo** diffusion models. HSWQ uses **sensitivity** and **importance** analysis instead of naive uniform cast. It offers two modes: standard-compatible (V1) and high-performance scaled (V2). **V2 requires a dedicated loader and is not usable at the current time.**
 
+**Experimental:** SD1.x / SD1.5 ComfyUI-first checkpoint quantization is now available as an early V1-only path. It is intended for UNet-first testing and is still more conservative than the SDXL flow.
+
 **Technical details:** [md/HSWQ_ Hybrid Sensitivity Weighted Quantization.md](md/HSWQ_%20Hybrid%20Sensitivity%20Weighted%20Quantization.md)
 
 **SDXL models:** [Hugging Face — Hybrid-Sensitivity-Weighted-Quantization-SDXL-fp8e4m3](https://huggingface.co/ussoewwin/Hybrid-Sensitivity-Weighted-Quantization-SDXL-fp8e4m3)
@@ -21,6 +23,7 @@ High-fidelity FP8 quantization for **SDXL**, **Flux1.dev**, and **Z Image Turbo*
 ## How to quantize
 
 - **SDXL:** [How to quantize SDXL](md/How%20to%20quantize%20SDXL.md)
+- **SD1.5 (experimental, V1 only):** [How to quantize SD1.5](md/How%20to%20quantize%20SD1.5.md)
 - **Z Image:** [How to quantize Z Image](md/How%20to%20quantize%20Z%20Image.md)
 
 **Benchmark results:**
